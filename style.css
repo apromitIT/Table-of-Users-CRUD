@@ -1,0 +1,147 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+	background-color: #999;
+font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 400px;
+	width: 90%;
+	min-width: 300px;
+	padding: 10px;
+}
+
+.input {
+	width: 100%;
+	height: 35px;
+	padding: 0 5px;
+	margin-bottom: 20px;
+}
+
+.input:focus-visible {
+outline: none;
+box-shadow: 2px 2px 10px 1px #fdffd783;
+}
+
+table,
+.input,
+.btn {
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px 1px #00000066;
+}
+
+table input {
+	height: 35px;
+	width: 170px;
+	font-size: 16px;
+	background-color: transparent;
+}
+
+.btn {
+	padding: 10px 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.btn.edit,
+.btn.del {
+	margin-bottom: 0;
+	box-shadow: none;
+}
+
+.btn.del {
+	background-color: transparent;
+	padding: 2px;
+	font-weight: 600;
+	color: #c46f00;
+	border-bottom: 1px solid;
+	border-radius: 0;
+}
+
+.btn.edit {
+	height: 22px;
+	width: 53px;
+	padding: 0;
+	background-color: #bedce5;
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+.btn.del:hover {
+	color: #f30105;
+	background-color: transparent;
+}
+
+.btn.edit:hover {
+	background-color: #98c9d7;
+}
+
+.btn:hover {
+	background-color: rgb(169, 201, 181);
+}
+
+.btn:active {
+	background-color: rgb(201, 169, 180);
+}
+
+table {
+	width: fit-content;
+	min-width: 300px;
+	margin-bottom: 30px;
+	border-spacing: 1px;
+}
+
+thead {
+	text-align: left;
+	background-color: #e6e4e4;
+}
+
+th,
+table input {
+	padding: 5px 10px;
+	text-transform: capitalize;
+}
+
+table input:focus-visible {
+	outline: #f30105 solid 1px;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #eaf5ff;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #f4faff;
+}
+
+.td-btns {
+	height: 35px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	margin: auto 0;
+}
